@@ -1,0 +1,655 @@
+/* HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+span {
+  font-family: Lato;
+  transition: all 0.5s;
+}
+.section {
+  width: 960px;
+  margin: 0 auto;
+}
+.section.large {
+  width: 100%;
+}
+.section.main_menu {
+  height: 125px;
+  background-color: rgba(255,255,255,0.95);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+  z-index: 999;
+}
+.section.main_menu > section {
+  position: relative;
+}
+.section.main_menu > section > div {
+  display: inline-block;
+}
+.section.main_menu > section > div:first-child a {
+  display: inline-block;
+}
+.section.main_menu .nav {
+  position: absolute;
+  right: 0;
+  top: 2.1em;
+}
+.section.main_menu .nav ul {
+  list-style: none;
+}
+.section.main_menu .nav ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+.section.main_menu .nav ul li:last-child {
+  margin-right: 0px;
+}
+.section.main_menu .nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #1abbb9;
+  padding: 0.3em 0.8em 0.3em 0.8em;
+  line-height: 1.2em;
+  font-size: 1.1em;
+  border-radius: 5px;
+  font-weight: 400;
+  font-family: Lato;
+}
+.section.main_menu .nav ul li a:hover,
+.section.main_menu .nav ul li a.active {
+  background-color: #ff9d3a;
+  color: #fff;
+}
+.section.main_menu .nav ul li:last-child {
+  margin-right: 0;
+}
+.hero {
+  background: url("../images/ImgHero.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 85%;
+  box-sizing: border-box;
+  padding-top: 10em;
+  height: 763px;
+  position: relative;
+}
+.hero > section {
+  text-align: center;
+}
+.hero > section h1 {
+/* VENDE  : */
+  font-size: 4.5em;
+  color: #fff;
+  letter-spacing: 2.57px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 0em;
+}
+.hero > section h5 {
+/* Ofrece a tus cliente: */
+  font-family: Lato;
+  font-size: 1.2em;
+  color: #fff;
+  letter-spacing: 0.99px;
+  line-height: 30px;
+  text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  text-align: center;
+  margin: 0;
+  margin-bottom: 3em;
+  margin-top: 1.5em;
+}
+.hero > section a {
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 0.8em 1.5em;
+  font-size: 1.2em;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+}
+.hero > section a:hover {
+  background-color: #ff9d3a;
+  border-color: #ff9d3a;
+}
+.carriers_tae {
+  display: block;
+  background-color: #fff;
+  width: 100%;
+  position: absolute;
+  bottom: 10%;
+}
+.carriers_tae ul {
+  text-align: center;
+  margin: 0;
+  padding: 0.5em;
+  list-style: none;
+}
+.carriers_tae ul li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+.carriers_tae ul li:last-child {
+  margin-right: 0px;
+  padding: 0;
+}
+.carriers_tae ul li figure {
+  margin: 0;
+}
+.carriers_tae ul li figure img {
+  transition: all 0.5s;
+}
+.carriers_tae ul li figure img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.highlight {
+  display: block;
+  height: 150px;
+  width: 100%;
+  background-color: #1abbb9;
+  box-sizing: border-box;
+}
+.highlight section {
+  padding: 1em;
+  position: relative;
+}
+.highlight section p {
+  font-size: 1.1em;
+  color: #fff;
+  letter-spacing: 0.99px;
+  line-height: 22px;
+  font-weight: 600;
+  font-style: italic;
+  display: inline-block;
+  width: 650px;
+}
+.highlight section p span {
+  display: inline-block;
+  margin-top: 1.5em;
+  font-weight: 300;
+}
+.highlight section div {
+  display: inline-block;
+  width: 250px;
+  position: absolute;
+  right: 0;
+  padding-top: 1em;
+  text-align: center;
+}
+.highlight section div > a,
+.highlight section div span {
+  display: block;
+  color: #fff;
+}
+.highlight section div a.mas_info {
+  font-size: 1.1em;
+  text-transform: capitalize;
+}
+.highlight section div a.mas_info:hover {
+  font-style: italic;
+}
+a.registrate_aqui {
+  font-size: 1.1em;
+  padding: 0.8em 1.1em;
+  text-transform: uppercase;
+  background-color: #ff9d3a;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  border-radius: 5px;
+/* REGISTRATE AQUI: */
+  color: #fff;
+  letter-spacing: 0.99px;
+  line-height: 22px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+a.registrate_aqui:hover {
+  background-color: #fff;
+  color: #00afab;
+}
+.titulo {
+  text-transform: uppercase;
+  color: #ff9d3a;
+  font-size: 1.9em;
+  margin: 0;
+  font-weight: 900;
+  letter-spacing: 1.65px;
+  line-height: 36px;
+}
+p.parrafos {
+/* Somos una empresa lí: */
+  font-size: 1.1em;
+  color: #292929;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin: 2em 0em;
+}
+p.parrafos.enfasis {
+  margin-left: 1.5em;
+  padding: 0.5em 0 0.5em 0.8em;
+  border-left: 5px solid #ff9d3a;
+}
+.section__quienes > section {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 100px;
+}
+.section__quienes > section:first-child {
+  width: 50%;
+}
+.section__quienes > section:last-child {
+  width: 50%;
+}
+.section__quienes .texto a {
+  font-size: 1.1em;
+  color: #292929;
+  text-transform: capitalize;
+}
+.section__quienes .texto a:hover {
+  font-style: italic;
+  color: #ff9d3a;
+}
+.section__quienes .imagenes {
+  text-align: right;
+}
+.section__quienes .imagenes figure {
+  display: inline-block;
+  margin: 0.5em;
+}
+.section__quienes .imagenes figure img {
+  display: inline-block;
+}
+.que_ofrecemos {
+  margin-top: 100px;
+}
+.que_ofrecemos div:first-child {
+  height: 130px;
+  display: block;
+  background-color: #00afab;
+  box-sizing: border-box;
+}
+.que_ofrecemos div:first-child h2 {
+  text-align: center;
+  padding: 1.5em;
+  font-size: 1.9em;
+  color: #fff;
+  font-weight: 900;
+  letter-spacing: 1.65px;
+  line-height: 36px;
+}
+.que_ofrecemos .servicios {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  background-color: #78dad8;
+  height: 550px;
+  vertical-align: top;
+}
+.que_ofrecemos .servicios:last-child {
+  background-color: #4ac9c6;
+}
+.que_ofrecemos .servicios figure {
+  text-align: center;
+  margin-top: 2em;
+}
+.que_ofrecemos .servicios h4 {
+/* Tiempo aire electrón: */
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 1.32px;
+  line-height: 24px;
+  text-align: center;
+}
+.que_ofrecemos .servicios p {
+  display: block;
+  padding: 0 20%;
+  text-align: left;
+  color: #fff;
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+.que_ofrecemos .servicios a {
+  text-align: right;
+  margin-right: 4em;
+  color: #008885;
+  margin-top: 1em;
+}
+.que_ofrecemos .servicios a:hover {
+  font-style: italic;
+}
+.como_iniciar {
+  margin-top: 100px;
+}
+.cont_pasos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.cont_pasos .pasos {
+  width: 33%;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 5em 1em 0em 0;
+}
+.cont_pasos .pasos span {
+  background-color: #4ac9c6;
+  color: #fff;
+  font-size: 2em;
+  font-weight: 900;
+  line-height: 2em;
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-radius: 50%;
+}
+.cont_pasos .pasos p {
+  text-align: left;
+}
+.cont_pasos .pasos ul {
+  text-align: left;
+  font-style: italic;
+}
+.cont_reg_aqui {
+  text-align: center;
+  margin-top: 65px;
+}
+.cont_reg_aqui a {
+  padding: 1em 4em;
+  font-size: 1.3em;
+}
+.cont_quedicen {
+  background-color: #4ac9c6;
+  padding: 3em 0em 1em 0em;
+  box-sizing: border-box;
+  margin-top: 100px;
+}
+.cont_quedicen .quedicen {
+  text-align: center;
+  position: relative;
+  display: block;
+}
+.cont_quedicen .quedicen .titulo {
+  color: #fff;
+}
+.cont_quedicen .quedicen .parrafo {
+  color: #fff;
+  padding: 1em 7em;
+}
+.cont_quedicen .quedicen .nombre_usuario {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3em;
+}
+.cont_quedicen .quedicen .nombre_usuario span {
+  display: block;
+  font-weight: 400;
+  font-size: 0.8em !important;
+  font-style: italic;
+}
+.cont_quedicen .quedicen ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin-top: 3em;
+}
+.cont_quedicen .quedicen ul li {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.cont_quedicen .quedicen ul li a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../images/oval_slider_orange.png") no-repeat center center;
+}
+.cont_quedicen .quedicen ul li a:hover,
+.cont_quedicen .quedicen ul li a.active {
+  background: url("../images/oval_slider_white.png") no-repeat center center;
+}
+.trabajaras {
+  margin-top: 100px;
+  text-align: center;
+}
+.trabajaras h2 {
+  text-align: left;
+  margin-bottom: 1.5em;
+}
+.pie {
+  margin-top: 100px;
+  background-color: #4ac9c6;
+  height: 100px;
+  padding: 0;
+  padding-top: 1em;
+}
+.pie figure,
+.pie p {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.pie p {
+  color: #fff;
+  padding-left: 1em;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide visually and from screen readers:
+ */
+.hidden {
+  display: none !important;
+}
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden;
+}
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

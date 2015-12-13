@@ -1,0 +1,74 @@
+.hero
+  background url("../images/ImgHero.png")
+  background-position top center
+  background-repeat no-repeat
+  background-size cover
+  height 85%
+  box-sizing border-box
+  padding-top 10em
+  height 763px
+  position relative
+  > section
+    text-align center
+    h1
+      /* VENDE  : */
+      font-size: 4.5em;
+      color: #FFFFFF;
+      letter-spacing: 2.57px;
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+      font-weight:900;
+      text-transform uppercase
+      text-align center
+      margin 0
+      margin-top:0em
+    h5
+      /* Ofrece a tus cliente: */
+      font-family: Lato;
+      font-size: 1.2em;
+      color: #FFFFFF;
+      letter-spacing: 0.99px;
+      line-height: 30px;
+      text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+      text-align center
+      margin 0
+      margin-bottom 3em
+      margin-top 1.5em
+    a
+      border 2px solid white
+      border-radius 5px
+      padding 0.8em 1.5em
+      font-size 1.2em
+      color white
+      text-decoration none
+      text-transform uppercase
+      display inline-block
+      &:hover
+        background-color $naranja
+        border-color $naranja
+
+.carriers_tae
+  display block
+  background-color white
+  width 100%
+  position absolute
+  bottom 10%
+
+  ul
+    text-align center
+    margin 0
+    padding 0.5em
+    list-style none
+    li
+      display: inline-block
+      margin-right 1.5em
+      &:last-child
+        margin-right 0px
+        padding 0
+      figure
+        margin 0
+        img
+          transition all .5s
+          &:hover
+            cursor pointer
+            transform scale(1.2)
+

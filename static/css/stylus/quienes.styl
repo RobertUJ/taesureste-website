@@ -1,0 +1,48 @@
+.titulo
+  text-transform: uppercase
+  color $naranja;
+  font-size 1.9em
+  margin 0
+  font-weight 900
+  letter-spacing: 1.65px;
+  line-height: 36px;
+
+p.parrafos
+  /* Somos una empresa lí: */
+  font-size: 1.1em;
+  color: $negro;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin 2em 0em
+  &.enfasis
+    margin-left 1.5em
+    padding .5em 0 .5em .8em
+    border-left 5px solid $naranja
+
+.section__quienes
+  > section
+    display inline-block
+    vertical-align top
+    margin-top: 100px
+    &:first-child
+      width 50%
+    &:last-child
+      width 50%
+
+  .texto
+    a
+      font-size 1.1em
+      color $negro
+      text-transform capitalize
+      &:hover
+        font-style italic
+        color $naranja
+
+  .imagenes
+    text-align right
+    figure
+      display  inline-block
+      margin 0.5em
+      img
+        display inline-block
+

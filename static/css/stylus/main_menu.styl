@@ -1,0 +1,49 @@
+.section
+  width:960px;
+  margin 0 auto
+  &.large
+    width:100%;
+  &.main_menu
+    height 125px
+    background-color: $blanco_menu
+    display: block
+    position: absolute
+    top 0
+    left: 0
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    z-index: 999
+    > section
+      position relative
+      > div
+        display inline-block
+        &:first-child
+          a
+            display inline-block
+    .nav
+      position absolute
+      right 0
+      top 2.1em
+      ul
+        list-style none
+        li
+          display inline-block
+          margin-right 1em
+          &:last-child
+            margin-right 0px
+          a
+            text-decoration none
+            text-transform uppercase
+            color $verde
+            padding 0.3em 0.8em 0.3em 0.8em
+            line-height 1.2em
+            font-size 1.1em
+            border-radius 5px
+            font-weight 400
+            font-family Lato
+            &:hover
+            &.active
+              background-color $naranja
+              color white
+
+          &:last-child
+            margin-right: 0
