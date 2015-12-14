@@ -531,6 +531,74 @@ p.parrafos.enfasis {
   color: #fff;
   padding-left: 1em;
 }
+.header_servicios {
+  background: url("../images/header-servicios.png") left top no-repeat;
+  background-size: cover;
+  height: 500px;
+  display: block;
+  position: relative;
+}
+.header_servicios >.section {
+  display: block;
+}
+.header_servicios >.section:nth-child(1) {
+  padding-top: 9em;
+  color: #fff;
+}
+.header_servicios >.section:nth-child(1) h1 {
+  font-size: 3em;
+  text-align: left;
+  margin: 0;
+  margin-top: 0.5em;
+  padding: 0;
+}
+.header_servicios >.section:nth-child(1) p {
+  font-size: 1.1em;
+  width: 60%;
+  margin: 1.5em 0 2em 0;
+}
+.header_servicios >.section:nth-child(2),
+.header_servicios >.section:nth-child(3) {
+  display: block;
+  background-color: #fff;
+}
+.header_servicios >.section:nth-child(2) ul,
+.header_servicios >.section:nth-child(3) ul {
+  text-align: left;
+  margin: 0;
+  list-style: none;
+  padding: 0.5em;
+  box-sizing: border-box;
+}
+.header_servicios >.section:nth-child(2) ul li,
+.header_servicios >.section:nth-child(3) ul li {
+  display: inline-block;
+  margin-right: 2em;
+}
+.header_servicios >.section:nth-child(2) ul li:last-child,
+.header_servicios >.section:nth-child(3) ul li:last-child {
+  margin-right: 0px;
+  padding: 0;
+}
+.header_servicios >.section:nth-child(2) ul li figure,
+.header_servicios >.section:nth-child(3) ul li figure {
+  margin: 0;
+  transition: all 0.5s;
+}
+.header_servicios >.section:nth-child(2) ul li figure:hover,
+.header_servicios >.section:nth-child(3) ul li figure:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.header_servicios >.section:nth-child(3) {
+  margin-top: 1em;
+}
+.header_servicios .hand {
+  position: absolute;
+  bottom: -0.6em;
+  right: 0em;
+  displayf: none;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
