@@ -519,7 +519,7 @@ p.parrafos.enfasis {
   background-color: #4ac9c6;
   height: 100px;
   padding: 0;
-  padding-top: 1em;
+  padding-top: 1.8em;
 }
 .pie figure,
 .pie p {
@@ -529,7 +529,8 @@ p.parrafos.enfasis {
 }
 .pie p {
   color: #fff;
-  padding-left: 1em;
+  padding-left: 2em;
+  margin-top: 1.5em;
 }
 .header_servicios {
   background: url("../images/header-servicios.png") left top no-repeat;
@@ -593,11 +594,131 @@ p.parrafos.enfasis {
 .header_servicios >.section:nth-child(3) {
   margin-top: 1em;
 }
-.header_servicios .hand {
+.porque {
+  display: block;
+  margin-top: 100px;
+}
+.porque .section:first-child h2 {
+  display: block;
+  text-align: left;
+  margin-bottom: 0.7em;
+}
+.porque .section:first-child figure {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  margin-top: 1.1em;
+  margin-left: 2em;
+}
+.porque .section:first-child figure img {
+  padding: 0;
+  margin: 0;
+}
+.porque .section:first-child p {
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+}
+.titulo {
+/* ¿PORQUÉ VENDER TIEMP: */
+  font-weight: 900;
+  font-size: 1.9em;
+  color: #ff9d3a;
+  letter-spacing: 1.65px;
+  line-height: 2.2em;
+}
+.parrafo {
+/* Las recargas electró: */
+  font-size: 1.1em;
+  color: #292929;
+  letter-spacing: 1px;
+  line-height: 20px;
+  width: 55%;
+}
+.btn.registrate {
+/* Rectangle 23: */
+  background: #ff9d3a;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.5);
+  border-radius: 5px;
+/* REGISTRATE AQUÍ: */
+  font-size: 1.5em;
+  color: #fff;
+  letter-spacing: 1.33px;
+  line-height: 24px;
+  text-decoration: none;
+  padding: 1em 3em;
+  text-transform: uppercase;
+  margin: 1em auto;
+  display: inline-block;
+}
+.btn.registrate:hover {
+  background-color: #fff;
+  color: #4ac9c6;
+}
+.canales {
+  margin-top: 100px;
+}
+.canales .parrafo {
+  width: 100%;
+  margin-top: 35px;
+}
+.cont-canales {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.canal {
+/* Rectangle 31: */
+  border: 2px solid #4ac9c6;
+/* Rectangle 32: */
+/* 	•	Segura y rapida a: */
+  font-size: 1em;
+  color: #292929;
+  line-height: 16px;
+  height: 550px;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+  border-top: 12px solid #4ac9c6;
+  display: inline-block;
+  margin-top: 1.8em;
+  box-sizing: border-box;
+  text-align: center;
+  position: relative;
+}
+.canal h4 {
+  color: #4ac9c6;
+  font-size: 1.5em;
+}
+.canal p {
+  text-align: left;
+  padding: 0em 1.5em;
+}
+.canal .cont-ventajas {
   position: absolute;
-  bottom: -0.6em;
-  right: 0em;
-  displayf: none;
+  bottom: 0px;
+  height: 170px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.canal span {
+  color: #4ac9c6;
+}
+.canal ul {
+  text-align: left;
+  padding: 0 2em 0 3em;
+}
+.canal ul li {
+  margin-top: 8px;
+}
+.canal:hover {
+  cursor: pointer;
+}
+.ultimo-registro {
+  margin-top: 100px;
+  text-align: center;
 }
 /* ==========================================================================
    Helper classes
