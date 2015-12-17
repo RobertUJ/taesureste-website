@@ -1,0 +1,109 @@
+.header-registro
+  background url("../images/registro.png") no-repeat top left
+  height 360px
+  background-size cover
+  h1
+    /* REGISTRATE : */
+    font-family: Lato;
+    font-size: 4em;
+    padding-top 2.8em
+    color: #FFFFFF;
+    letter-spacing: 2.28px;
+    line-height 1em
+    margin 0
+    box-sizing border-box
+    text-transform uppercase
+
+.cont-registro
+  margin-top 100px
+  h2
+    line-height 1em
+    text-transform none
+    font-weight 400
+
+.cont-form
+  margin-top 65px
+  div
+    display inline-block
+    vertical-align top
+
+    figure
+      display inline-block
+      margin-top 6em
+
+    &:first-child
+      width 70%
+      form
+        input[type=text]
+          border-radius 5px
+          background-color #EEEEEE
+          font-size 1.8em
+          color $naranja
+          border none
+          padding 1em
+          box-sizing border-box
+          width 100%
+          margin 0.3em 0em
+          text-transform uppercase
+          &:active,
+          &:focus
+            color rgba($negro,0.8)
+
+          &::-webkit-input-placeholder {
+            color: #BFBFBF;
+            text-overflow: ellipsis;
+          }
+          &:-moz-placeholder { /* Firefox 18- */
+            color: #BFBFBF;
+            text-overflow: ellipsis;
+          }
+
+          &::-moz-placeholder {  /* Firefox 19+ */
+            color: #BFBFBF;
+            text-overflow: ellipsis;
+          }
+
+          :-ms-input-placeholder {
+            color: #BFBFBF;
+            text-overflow: ellipsis;
+          }
+
+        input[type=submit]
+          background: $naranja;
+          box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+          border-radius: 5px;
+          font-family: Lato;
+          font-size: 1.5em;
+          color: white;
+          border none
+          padding 1em 6em
+          text-transform uppercase
+          transition: all 0.5s ease 0s;
+          display inline-block
+          text-align center
+          margin-top 0.5em
+
+          &:hover
+            background-color white
+            color $verde3
+
+    &:last-child
+      width 30%
+
+
+.cont-icons
+  margin-top 100px
+  display flex
+  flex-wrap nowrap
+  flex-flow center
+  div
+    width 16.6%
+    text-align center
+    figure
+      img
+        transition-duration: 0.8s;
+        transition-property: transform;
+        display inline-block
+        &:hover
+          transform: rotate(360deg);
+          cursor pointer

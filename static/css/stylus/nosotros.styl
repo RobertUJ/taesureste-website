@@ -1,0 +1,55 @@
+// header
+.header-nosotros
+  height 450px
+  display block
+  background: url(../images/nosotros.png) no-repeat top left;
+  background-size cover
+  padding-top 11em
+  box-sizing border-box
+  .section
+    h1
+      /* TAEDELSURESTE: */
+      font-family: Lato;
+      font-weight 900
+      font-size: 5em;
+      text-transform uppercase
+      color: white;
+      letter-spacing: 7.06px;
+      display inline-block
+
+// Quienes somos
+.quienes-cont
+  margin-top 80px
+
+// vision mision
+.vision-mision
+  margin-top 100px
+  .section
+    > div
+      display: inline-block
+      width 50%
+      vertical-align middle
+    .vision,
+    .mision
+      text-align left
+
+    .mision
+      margin-top: 2em
+
+//  Valores
+.valores
+  margin-top 100px
+  > section
+    &:nth-child(2)
+    &:nth-child(3)
+      display flex
+      flex-wrap nowrap
+      flex-flow center
+      > span
+        display inline-block
+        width 25%
+        text-transform uppercase
+        margin-top 1em
+        &:hover
+          font-weight 900
+          cursor: pointer;

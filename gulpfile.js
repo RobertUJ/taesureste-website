@@ -33,7 +33,7 @@ gulp.task('stylus', function () {
     }))
     //.pipe(gzip(gzip_options))
     .pipe(rename({suffix: '.min'}))
-    //.pipe(minifycss())
+    .pipe(minifycss())
     .pipe(livereload())
     .pipe(gulp.dest(paths.css));
 });
